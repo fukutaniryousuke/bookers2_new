@@ -73,6 +73,10 @@
       </nav>
     </header>
     <main>
+      <% if flash[:notice] %>
+        <div class= "flash">
+        <%= flash[:notice] %>
+      <% end %>
     <%= yield %>
     </main>
     <footer>

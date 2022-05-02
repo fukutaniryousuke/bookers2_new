@@ -16,11 +16,11 @@
 .table {
   width: 100%;
     margin-bottom: 1rem;
-    color: ;
+    color:  #212529;
 }
 
-div.field_with_errors {
-  background-color: #fcc;
-  padding: 2px;
+.flash {
+  color: green;
+  margin: 30px;
 }
 

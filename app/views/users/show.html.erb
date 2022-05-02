@@ -8,13 +8,16 @@
     </div>
     <div class="col-8 offset-1">
      <h2>Book detail</h2>
-      <table class="table">
+      <table class="table table-hover">
+        <thead>
         <tr>
           <th></th>
           <th>Title</th>
           <th>Body</th>
         </tr>
+        </thead>
      <% @books.each do |book| %>
+       <tbody>
         <tr>
           <td>
            <% if @user.profile_image.attached? %>
@@ -26,6 +29,7 @@
           <td><%= link_to book.title, book_path(book.id) %></td>
           <td><%= book.body %></td>
         </tr>
+        </tbody>
      <% end %>
       </table>
     </div>
