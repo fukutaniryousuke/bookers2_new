@@ -41,6 +41,7 @@
            </td>
              <td><%= book.title %></td>
              <td><%= book.body %></td>
+             <td><%= render "favorites/favorite-btn", book: book %></td>
              <td><%= link_to "これ見るん？", book_path(book.id), class: "btn btn-outline-info btn-block" %></td>
          </tr>
          <% end %>

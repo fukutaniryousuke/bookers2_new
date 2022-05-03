@@ -41,6 +41,8 @@
             </td>
               <td><%= @book.title %></td>
               <td><%= @book.body %></td>
+              <td><%= render "favorites/favorite-btn", book: @book %></td>
+            
             <% if @book.user == current_user %>
               <td><%= link_to "編集しまっせ", edit_book_path(@book.id), class: "btn btn-success" %></td>
               <td><%= link_to "消しまっせ", book_path(@book.id), method: :delete, "data-confirm" => "ほんまに消しますん？", class: "btn btn-danger" %></td>
